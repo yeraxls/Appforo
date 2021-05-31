@@ -1,4 +1,5 @@
-﻿using Appforo.Services;
+﻿using Appforo.repositories;
+using Appforo.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Appforo
         public static IServiceCollection AddDependency(this IServiceCollection services)
         {
             services.AddTransient<IEstablishmentService, EstablishmentService>();
+            services.AddTransient<IEstablishmentRepository, EstablishmentRepository>();
 
             return services;
         }

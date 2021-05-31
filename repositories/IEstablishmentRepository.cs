@@ -1,9 +1,9 @@
 ﻿using Appforo.Class;
 using System.Collections.Generic;
 
-namespace Appforo.Services
+namespace Appforo.repositories
 {
-    public interface IEstablishmentService
+    public interface IEstablishmentRepository
     {
         void NewEstablishment(ModAppEstablishment establishment);
         void AddPeople(ModAppEstablishment establishment);

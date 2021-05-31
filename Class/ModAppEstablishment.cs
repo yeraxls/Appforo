@@ -9,9 +9,10 @@ namespace Appforo.Class
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        private int CurrentCapacity { get; set; }
+        public int CurrentCapacity { get; set; }
         public int MaximumCapacity { get; set; }
         public int PeopleNew { get; set; }
+        public string City { get; set; }
 
 
 
